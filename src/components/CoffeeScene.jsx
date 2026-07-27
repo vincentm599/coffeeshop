@@ -1,7 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 
 export default function CoffeeScene() {
-  const { scene } = useGLTF("/models/coffeeshop.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/coffeeshop.glb`)
 
   return (
     <primitive
